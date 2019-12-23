@@ -1,10 +1,14 @@
 
 
   const cards = document.querySelectorAll('.memory-card');
+  const h3 = document.querySelector('.h3')
+
 
   let hasFlippedCard = false;
   let lockBoard = false;
   let firstCard, secondCard;
+
+
 
   function flipCard() {
     if (lockBoard) return;
@@ -65,9 +69,12 @@
   })();
 
 
+  let counter = 0
 
-
-
+  cards.forEach(card => card.onclick = function() {
+    counter += 1;
+    h3.innerHTML = `Clicked ${counter} Times`;
+  })
 
 
 

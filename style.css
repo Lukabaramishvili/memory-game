@@ -8,7 +8,12 @@
 body {
   height: 100vh;
   display: flex;
-  background: blue;
+  background: #990000;
+}
+
+.h3 {
+  font-size: 30;
+  color: yellow;
 }
 
 .memory-game {
